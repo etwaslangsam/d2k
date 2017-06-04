@@ -1,5 +1,5 @@
 charset,Shift_JIS
 name,�֓ˋS
 type,ghost
-directory,4649
+directory,d2k
 refresh,0

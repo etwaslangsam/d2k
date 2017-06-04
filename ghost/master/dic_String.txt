@@ -1,6 +1,7 @@
 おすすめとか
 
 ＠homeurl
+https://raw.githubusercontent.com/etwaslangsam/d2k/master/
 
 ＃ネットワーク更新時にアクセスするアドレス。
 ＃フォルダ名を記述、最後に/をつけてください。例のような形になります。
