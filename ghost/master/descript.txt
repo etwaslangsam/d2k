@@ -3,6 +3,7 @@ name,蛇突鬼<ダッキ>
 type,ghost
 craftman,Shinji Makino
 craftmanw,牧野信次
+craftmanurl,http://ghosthacking.webcrow.jp/index.html
 readme,readme.txt
 sakura.name,芹那
 kero.name,妃音
