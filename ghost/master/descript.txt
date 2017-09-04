@@ -1,11 +1,12 @@
 charset,Shift_JIS
-name,蛇突鬼<ダッキ>
+name,芹那と妃音
 type,ghost
-craftman,Shinji Makino
+craftman,etwaslangsam
 craftmanw,牧野信次
 craftmanurl,http://ghosthacking.webcrow.jp/index.html
 readme,readme.txt
 sakura.name,芹那
+sakura.name2,せりな
 kero.name,妃音
 sakura.seriko.defaultsurface,0
 kero.seriko.defaultsurface,2000
