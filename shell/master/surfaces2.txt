@@ -15,6 +15,7 @@ surface2000-2009, 2100-2109, 2201, 2207-2208, 2300-2311, 2500
 	
 	animation2.interval,bind
 	animation2.pattern0,add,700,0,0,0
+	animation2.collision0,236,38,292,100,！？
 }
 
 //surface3000-3009, 3100-3109, 3201, 3207-3208, 3300-3311, 3500
@@ -266,6 +267,7 @@ element1,overlayfast,surface_b00500.png,0,0
 surface700
 {
 element0,overlay,bukkomi1.png,0,0
+collision0,236,38,292,100,！？
 }
 
 
