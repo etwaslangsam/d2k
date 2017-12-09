@@ -1,0 +1,261 @@
+charset,Shift_JIS
+
+descript
+{
+	version,1
+}
+
+//-------------------------------------------------------------
+//表情などを乗せる土台になる画像の指定です。
+//0番から500番までに耳と尻尾あり、1000番から1500番までに耳尻尾なし状態の画像を指定しています。
+
+surface4000-4009, 4100-4109, 4200, 4202, 4208-4209, 4300-4309, 4500
+{
+	element0,base,surface_c00000.png,0,0
+}
+
+//surface1000-1009, 1100-1109, 1200, 1202, 1208-1209, 1300-1309, 1500
+//{
+//	element0,base,surface_c01000.png,0,0
+//}
+
+//-------------------------------------------------------------
+//マウスなどで触れる当たり判定を指定します。
+//必要に応じて追加や削除を行ってください。
+//名前（HeadやEarなど）は自由に設定できます。
+//範囲が重なると番号（collision○○,の部分）が小さいほど優先されます。
+//残り４つの数値は当たり判定の四隅の座標です。
+//普通に調べると大変なのでcoodinやころぺたなどの支援ツールを頼りましょう。
+//これも上と同じく耳と尻尾のあるなしで２パターン用意しています。
+
+//耳尻尾つき
+surface.append4000-4009, 4100-4109, 4200, 4202, 4208-4209, 4300-4309, 4500
+{
+	collision100,145,91,221,118,Head
+	collision101,197,48,272,109,Ear
+	collision102,110,32,175,111,Ear
+	collision103,188,151,208,171,Eye
+	collision104,148,146,170,168,Eye
+	collision105,173,179,183,188,Mouth
+	collision106,145,164,206,184,Face
+	collision107,151,225,224,276,Bust
+	collision108,176,352,208,387,Hand
+	collision109,101,401,252,434,Skirt
+	collision110,11,278,107,458,Tail
+}
+
+//耳尻尾なし
+//surface.append1000-1009, 1100-1109, 1200, 1202, 1208-1209, 1300-1309, 1500
+//{
+//	collision100,108,80,222,120,Head
+//	collision103,127,151,147,171,Eye
+//	collision104,167,146,189,168,Eye
+//	collision105,152,179,162,188,Mouth
+//	collision106,128,164,189,184,Face
+//	collision107,114,223,187,274,Bust
+//	collision108,127,352,159,387,Hand
+//	collision109,82,401,233,434,Skirt
+//}
+
+//-------------------------------------------------------------
+//まばたきのアニメーション指定です。
+//このシェルでは基本の表情（0番と1000番）のみに設定してあります。
+//追加したい方は解説サイトなどを探してみてください。ちょっと大変です。
+
+surface.append4000
+{
+animation0.interval,sometimes
+animation0.pattern0,base,4006,50,0,0
+animation0.pattern1,base,4500,50,0,0
+animation0.pattern2,base,-1,60,0,0
+}
+
+//surface.append1000
+//{
+//animation0.interval,sometimes
+//animation0.pattern0,base,1006,50,0,0
+//animation0.pattern1,base,1500,50,0,0
+//animation0.pattern2,base,-1,60,0,0
+//}
+
+//-------------------------------------------------------------
+//何番の表情にどの画像を使うのかという指定です。
+//上で設定した土台の画像にここで指定した表情の画像が重なって表示されます。
+//このシェルでは耳尻尾があるものとないもので同じ画像を重ねています。
+//下の『surface.append1, 1001』は1番と1001番に同じ設定をするという意味です。
+
+surface.append4001, 1001
+{
+element1,overlayfast,surface_c00001.png,0,0
+}
+
+surface.append4002, 1002
+{
+element1,overlayfast,surface_c00002.png,0,0
+}
+
+surface.append4003, 1003
+{
+element1,overlayfast,surface_c00003.png,0,0
+}
+
+surface.append4004, 1004
+{
+element1,overlayfast,surface_c00004.png,0,0
+}
+
+surface.append4005, 1005
+{
+element1,overlayfast,surface_c00005.png,0,0
+}
+
+surface.append4006, 1006
+{
+element1,overlayfast,surface_c00006.png,0,0
+}
+
+surface.append4007, 1007
+{
+element1,overlayfast,surface_c00007.png,0,0
+}
+
+surface.append4008, 1008
+{
+element1,overlayfast,surface_c00008.png,0,0
+}
+
+surface.append4009, 1009
+{
+element1,overlayfast,surface_c00009.png,0,0
+}
+
+surface.append4100, 1100
+{
+element1,overlayfast,surface_c00100.png,0,0
+}
+
+surface.append4101, 1101
+{
+element1,overlayfast,surface_c00101.png,0,0
+}
+
+surface.append4102, 1102
+{
+element1,overlayfast,surface_c00102.png,0,0
+}
+
+surface.append4103, 1103
+{
+element1,overlayfast,surface_c00103.png,0,0
+}
+
+surface.append4104, 1104
+{
+element1,overlayfast,surface_c00104.png,0,0
+}
+
+surface.append4105, 1105
+{
+element1,overlayfast,surface_c00105.png,0,0
+}
+
+surface.append4106, 1106
+{
+element1,overlayfast,surface_c00106.png,0,0
+}
+
+surface.append4107, 1107
+{
+element1,overlayfast,surface_c00107.png,0,0
+}
+
+surface.append4108, 1108
+{
+element1,overlayfast,surface_c00108.png,0,0
+}
+
+surface.append4109, 1109
+{
+element1,overlayfast,surface_c00109.png,0,0
+}
+
+surface.append4200, 1200
+{
+element1,overlayfast,surface_c00200.png,0,0
+}
+
+surface.append4202, 1202
+{
+element1,overlayfast,surface_c00202.png,0,0
+}
+
+surface.append4208, 1208
+{
+element1,overlayfast,surface_c00208.png,0,0
+}
+
+surface.append4209, 1209
+{
+element1,overlayfast,surface_c00209.png,0,0
+}
+
+surface.append4300, 1300
+{
+element1,overlayfast,surface_c00300.png,0,0
+}
+
+surface.append4301, 1301
+{
+element1,overlayfast,surface_c00301.png,0,0
+}
+
+surface.append4302, 1302
+{
+element1,overlayfast,surface_c00302.png,0,0
+}
+
+surface.append4303, 1303
+{
+element1,overlayfast,surface_c00303.png,0,0
+}
+
+surface.append4304, 1304
+{
+element1,overlayfast,surface_c00304.png,0,0
+}
+
+surface.append4305, 1305
+{
+element1,overlayfast,surface_c00305.png,0,0
+}
+
+surface.append4306, 1306
+{
+element1,overlayfast,surface_c00306.png,0,0
+}
+
+surface.append4307, 1307
+{
+element1,overlayfast,surface_c00307.png,0,0
+}
+
+surface.append4308, 1308
+{
+element1,overlayfast,surface_c00308.png,0,0
+}
+
+surface.append4309, 1309
+{
+element1,overlayfast,surface_c00309.png,0,0
+}
+
+surface.append4500, 1500
+{
+element1,overlayfast,surface_c00500.png,0,0
+}
+
+
+
+
+
+
