@@ -251,10 +251,10 @@
 ＃────────
 ＃選択肢
 ＃────────
-＊OnChoiceSelect
-＄選択ＩＤ	（Reference0）
-＞（Reference0）
-＞見つからない
+＃＊OnChoiceSelect
+＃＄選択ＩＤ	（Reference0）
+＃＞（Reference0）
+＃＞見つからない
 
 ＊OnChoiceSelectEx
 ＄選択ラベル	（Reference0）
@@ -270,10 +270,10 @@
 ＞（Reference1）
 ＞見つからない
 
-＊OnAnchorSelect
-＄選択ＩＤ	（Reference0）
-＞（Reference0）
-＞見つからない
+＃＊OnAnchorSelect
+＃＄選択ＩＤ	（Reference0）
+＃＞（Reference0）
+＃＞見つからない
 
 ＊見つからない
 ：\s[302]あぁ？\w3 （Reference0）？
