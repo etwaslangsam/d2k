@@ -351,9 +351,3 @@
 ＊ころころカウンタ初期化
 ＄ころころカウンタ	
 
-＊OnMouseEnter
-＄（Reference3）（Reference4）見つめタイマ	3
-
-＊OnMouseLeave
-＄全タイマ解除	実行
-＄ころころカウンタ	
