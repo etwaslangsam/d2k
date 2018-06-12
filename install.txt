@@ -1,5 +1,5 @@
 charset,Shift_JIS
-name,�֓ˋS
+name,�ړ߂Ɣ܉�
 type,ghost
 directory,d2k
 refresh,0
