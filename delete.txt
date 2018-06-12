@@ -1,2 +1,3 @@
 ghost\master\dic_Word.txt
 ghost\master\dic_Mouse2.txt
+ghost\master\dic_Touch2.txt
