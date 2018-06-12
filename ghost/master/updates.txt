@@ -1,4 +1,4 @@
-file,delete.txt492c11e381a2c234eebbbabdc2cac4c5size=27
+file,delete.txtcadd996011235e4672736fd0a30c82fesize=56
 file,developer_options.txta0e4ed742a674273810092b93a4fdcc1size=225
 file,install.txt834f9f60486fcf001f7db943c296ed7bsize=74
 file,readme.txtbf90dff3f1f970390f1cd00374dd44a6size=1548
@@ -8,10 +8,10 @@ file,ghost/master/dic_Base.txtdac367fb7e1d2df4a577262487e81955size=27957
 file,ghost/master/dic_Communicate.txta4233446a0dbe5a271ea7e89ce6e957esize=957
 file,ghost/master/dic_Event.txte302d7a10def39aac364c46af951d582size=8891
 file,ghost/master/dic_Mouse.txt771841d0c8900f2bf2a002af8d1fc704size=6952
-file,ghost/master/dic_Mouse2.txtc9d0156150265e5c626618cbfff68183size=4559
 file,ghost/master/dic_Mouse3.txtc87d3f0303b7ea00fa65ceaf27672fc4size=6173
 file,ghost/master/dic_String.txt5ad0d9630cf829865ba6fc867c5d3a0fsize=2686
 file,ghost/master/dic_talk.txt52b9b21cd3f53805e9e060059c11955dsize=22759
+file,ghost/master/dic_Touch2.txtc9d0156150265e5c626618cbfff68183size=4559
 file,ghost/master/fox.ico6646fb068871cf7c0723a9d2aeecca1fsize=2558
 file,ghost/master/replace.txt463cdc9e868b003a9da2d55d9f0091b3size=52
 file,ghost/master/replace_after.txt4e18d4fcde00cfbb585f5e245051036esize=79
