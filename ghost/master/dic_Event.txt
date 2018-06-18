@@ -351,3 +351,30 @@
 ＊ころころカウンタ初期化
 ＄ころころカウンタ	
 
+
+＃────────
+＃バグ報告
+＃────────
+＊バグ報告
+\![open,inputbox,拍手送信内容,-1,いいね！,--limit=1000]
+
+＊拍手送信内容を教えてもらった
+\![execute,http-post,http://clap.webclap.com/clap.php?id=etwaslangsam,--param=message_body="芹那と妃音＠（拍手送信内容）",--async=webclap]
+＄拍手送信内容	
+
+＊拍手送信内容を空打ちされた
+\e
+
+＊拍手送信完了
+\0\s[0]送ったぞ。\w6
+\1\s[2005]わざわざサンキューな。
+
+＊拍手送信失敗
+\0\s[107]チッ……失敗だってよ。
+\1\s[2102]（Reference4）が原因みてぇーだな。
+
+＊OnExecuteHTTPComplete
+＞拍手送信完了	（R1）==webclap
+
+＊OnExecuteHTTPFailure
+＞拍手送信失敗	（R1）==webclap
