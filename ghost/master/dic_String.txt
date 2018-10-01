@@ -20,63 +20,8 @@ https://www.amazon.co.jp/dp/B0019X4AVW/ref=cm_sw_r_tw_dp_U_x_HGuHBbKWQJW5N
 ブルボン チョコあーんぱん
 https://www.amazon.co.jp/dp/B01COSCPX0/ref=cm_sw_r_tw_dp_U_x_JMuHBb5HX05KX
 
-
-
-＊sakura.portalsites
-ゴーストの使い方 - SSP
-http://keshiki.nobody.jp/
-
-＊sakura.portalsites
--
-
-＊sakura.portalsites
-SSP BUGTRAQ 
-http://ssp.shillest.net/ 
-
-＊sakura.portalsites
--
-
-＊sakura.portalsites
-里々φ/整備班カスタム
-http://ms.shillest.net/satoriya.xhtml
-
-＊sakura.portalsites
-里々Wiki
-http://soliton.sub.jp/satori/
-
-＊sakura.portalsites
--
-
-＊sakura.portalsites
-ゴーストキャプターさくら
-http://buynowforsale.shillest.net/ghosts/
-
-＊sakura.portalsites
-GHOST TOWN
-http://ghosttown.mikage.jp/
-
-＊sakura.portalsites
-Disc-2 
-http://disc2.s56.xrea.com/ 
-
-＊sakura.portalsites
-ゴースト回覧板３rd
-http://jbbs.shitaraba.net/computer/44300/
-
-＊sakura.portalsites
-霊界通信
-http://ghost-log.sakuratan.com/
-
-＊sakura.portalsites
-ゴーストの感想やレビューを書くWiki
-http://ghost.sakura.tv/dokuwiki/doku.php?id=start
-
-＊sakura.portalsites
-伺的なフォーラム
-http://www.ghost.sakura.tv/fluxbb/
-
-＊sakura.portalsites
--
+＠portalrootbutton.caption
+配布サイト
 
 ＊sakura.portalsites
 ほっとぺっぱぁ団
@@ -84,7 +29,7 @@ http://ghosthacking.webcrow.jp/index.html
 
 
 ＊sakura.portalsites
-バグ報告
+メッセージフォーム
 https://goo.gl/forms/qJhnaKjUfVtcOWSk1
 
 
