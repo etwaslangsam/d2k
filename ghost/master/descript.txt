@@ -1,5 +1,5 @@
 charset,Shift_JIS
-name,‹Ú“ß‚Æ”Ü‰¹
+name,‹Ú“ß‚Æ”Ü‰¹withŒºŒb
 type,ghost
 craftman,etwaslangsam
 craftmanw,–q–ìMŸ

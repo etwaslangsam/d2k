@@ -270,6 +270,10 @@ element0,overlay,bukkomi1.png,0,0
 collision0,236,38,292,100,ÅIÅH
 }
 
-
+kero.cursor
+{
+	mousehover0,Eye,eye.cur
+	mousehover1,Bust,eye.cur
+}
 
 

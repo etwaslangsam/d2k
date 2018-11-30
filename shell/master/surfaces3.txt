@@ -254,7 +254,11 @@ surface.append4500, 1500
 element1,overlayfast,surface_c00500.png,0,0
 }
 
-
+char2.cursor
+{
+	mousehover0,Eye,eye.cur
+	mousehover1,Bust,eye.cur
+}
 
 
 

@@ -262,6 +262,10 @@ element0,overlay,bukkomi2.png,0,0
 collision0,200,14,261,76,ÅIÅH
 }
 
-
+sakura.cursor
+{
+	mousehover0,Eye,eye.cur
+	mousehover1,Bust,eye.cur
+}
 
 
