@@ -1,25 +1,13 @@
-おすすめとか
 
+＃────────
+＃リソース
+＃────────
 ＠homeurl
 https://raw.githubusercontent.com/etwaslangsam/d2k/master/
 
-＃ネットワーク更新時にアクセスするアドレス。
-＃フォルダ名を記述、最後に/をつけてください。例のような形になります。
-＃例）http://satolist.sakura.ne.jp/satolist_template/
-
-
-＊sakura.recommendsites
-いφ・ろφ・はφ・す 天然水
-https://www.amazon.co.jp/dp/B0026IAWMU/ref=cm_sw_r_tw_dp_U_x_2AuHBbSZX4TD6
-
-＊sakura.recommendsites
-カップヌードル チリトマトヌードル
-https://www.amazon.co.jp/dp/B0019X4AVW/ref=cm_sw_r_tw_dp_U_x_HGuHBbKWQJW5N
-
-＊sakura.recommendsites
-ブルボン チョコあーんぱん
-https://www.amazon.co.jp/dp/B01COSCPX0/ref=cm_sw_r_tw_dp_U_x_JMuHBb5HX05KX
-
+＃────────
+＃ポータル
+＃────────
 ＠portalrootbutton.caption
 配布サイト
 
@@ -32,10 +20,20 @@ http://ghosthacking.webcrow.jp/index.html
 メッセージフォーム
 https://goo.gl/forms/qJhnaKjUfVtcOWSk1
 
+＃────────
+＃芹那おすすめ
+＃────────
+＊sakura.recommendsites
+いφ・ろφ・はφ・す 天然水
+https://www.amazon.co.jp/dp/B0026IAWMU/ref=cm_sw_r_tw_dp_U_x_2AuHBbSZX4TD6
 
-＊sakura.portalsites
-web拍手
-script:\![open,inputbox,拍手送信内容,-1,いいね！,--limit=1000]
+＊sakura.recommendsites
+カップヌードル チリトマトヌードル
+https://www.amazon.co.jp/dp/B0019X4AVW/ref=cm_sw_r_tw_dp_U_x_HGuHBbKWQJW5N
+
+＊sakura.recommendsites
+ブルボン チョコあーんぱん
+https://www.amazon.co.jp/dp/B01COSCPX0/ref=cm_sw_r_tw_dp_U_x_JMuHBb5HX05KX
 
 ＃────────
 ＃妃音おすすめ
@@ -124,6 +122,18 @@ https://www.amazon.co.jp/dp/B00DMUL3FG/ref=cm_sw_r_tw_dp_U_x_7svHBbTVM6WM3
 ＃────────
 ＃単語群
 ＃────────
+＠時間帯
+（whenlist,（現在時）<,4,深夜,11,朝,16,昼,19,夕方,23,夜,深夜）
+＠曜日
+（whnelist,（現在曜日）==,土,休日,日,休日,平日）
+＠季節
+（whenlist,（現在月）<,3,冬,6,春,7,梅雨,9,夏,12,秋,冬）
+
+＠ON
+\![bind,bukkomi,！？,1]
+＠OFF
+\![bind,bukkomi,！？,0]
+
 ＠中華まん
 肉まん
 あんまん

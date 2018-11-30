@@ -1,4 +1,35 @@
-システム部
+
+＃────────
+＃■マウスイベント
+＃────────
+＊OnMouseDoubleClick
+＄（Reference3）（Reference4）見つめタイマ	
+＞（Reference3）（Reference4）つつかれ	（Reference5）==0
+
+＊OnMouseWheel
+＄ころころカウンタ=（ころころカウンタ）+1
+＄ころころカウンタ初期化タイマ	３
+＞（Reference3）（Reference4）上ころ	（Reference2）>0&&（ころころカウンタ）>3
+＞（Reference3）（Reference4）下ころ	（Reference2）<0&&（ころころカウンタ）>3
+＞（Reference3）（Reference4）ころころ	（ころころカウンタ）>3
+
+＊ころころカウンタ初期化
+＄ころころカウンタ	０
+
+＊OnMouseHover
+＄（Reference3）（Reference4）見つめタイマ	２
+
+＊OnMouseLeave
+＄（Reference3）（Reference4）見つめタイマ	
+
+＊OnMouseLeaveAll
+＄（Reference3）（Reference4）見つめタイマ	
+
+＃────────
+＃■表情復帰
+＃────────
+＊OnSurfaceRestore
+\p[2]（when,（３人目フラグ）==２,\s[4000],\s[-1]）\1\s[2000]（OFF）\0\s[0]（OFF）
 
 ＃────────
 ＃シェル変更
@@ -15,27 +46,34 @@
 ：冗談だよ。\w5見れなくて残念だったな。
 
 ＃────────
-＃最小化解除
+＃■最小化解除
 ＃────────
-＊OnWindowStateRestore	（３人目フラグ）<２
-\1\s[2000]\0\s[302]ちっ……なんだよ急に狭いとこ押し込みやがって。
+＊OnWindowStateRestore
+＞最小化解除２	（３人目フラグ）==２
+＞最小化解除	（３人目フラグ）<２
 
-＊OnWindowStateRestore	（３人目フラグ）<２
-\0\s[0]\1\s[2000]なんだウンコか？
+＊最小化解除
+\1\s[2000]\0\s[302]ちっ……なんだよ急に狭いとこ押し込みやがって。\e
 
-＊OnWindowStateRestore	（３人目フラグ）==２
+＊最小化解除
+\0\s[0]\1\s[2000]なんだウンコか？\e
+
+＊最小化解除２
 \0\s[0]\1\s[2000]\p[2]\s[4102]どなたかいらしてたんですか？\w5
 \s[4003]ごめんなさい、お邪魔でしたか？
+\e
 
-＊OnWindowStateRestore	（３人目フラグ）==２
+＊最小化解除２
 \0\s[0]\p[2]\s[4200]\1\s[2005]どしたよ？\w3 隠れてシコってたんか？\w6
 \0\s[107]うわっ…\w3…\w3さいてーだな。
 \p[2]\s[4009]や、家主様も殿方ですから仕方がないですよ。\w5
 \s[4106]うら若き乙女が三人もいるのですから、獣欲を抑えられなくても
 \1\s[2302]\n[half]優等生にもシコるって通じんだな。
+\e
 
-＊OnWindowStateRestore	（３人目フラグ）==２
+＊最小化解除２
 \p[2]\s[4200]\1\s[2000]\0\s[104]なんだよ、戻ってこなくてもよかったんだぞ？
+\e
 
 ＃────────
 ＃時計合わせ
@@ -216,29 +254,33 @@
 \s[2303]あやっべ……\s[2302]マァいいか、出来たぞ。\e
 
 ＃────────
-＃キー押下
+＃■キー押下
 ＃────────
-＊OnKeyPress	（Reference0）==r
+＊OnKeyPress
+＞（Reference0）が押された
+
+＊rが押された	（３人目フラグ）<２
 ＄辞書リロード	実行
 ＄全タイマ解除	実行
-＄さくらスクリプトによるスコープ切り換え時	
-＞リロードした
-
-＊リロードした
 \1\s[2207]（ON）φ
 ：\s[7]（ON）\_sリロードの時間だ！コラァ!!\_s
 
-＊リロードした	（３人目フラグ）==２
+＊rが押された	（３人目フラグ）==２
+＄辞書リロード	実行
+＄全タイマ解除	実行
 \1\s[2207]（ON）φ
 \0\s[7]（ON）\_sリロードの時間だ！コラァ!!\_s
-\p[2]\s[4102]な、なんですか！？\w3 その『！？』って？！
+\p[2]\s[4102]な、なんですか！？\w5
+その『！？』って？！
+
 \s[4308]ずるいですわ！\w3 私も出したい！！
+\1（OFF）\0（OFF）\e
 
-＊OnKeyPress	（Reference0）==t
+＊tが押された
 ＄トーク	（）
-\1（OFF）\c\0（OFF）\c（トーク）
+（トーク）
 
-＊OnKeyPress	（Reference0）==s
+＊sが押された
 \1\s[2000]\0\s[0]\_q（現在年）年（現在月）月（現在日）日φ（（現在曜日）φ）
 
 ランダムトークφ：（countNoNameTalk）個
@@ -246,15 +288,15 @@
 \_q
 
 ＃────────
-＃キー入力
+＃■キー入力
 ＃────────
 ＊OnUserInput
-＞（Reference0）をタイムアウト	（compare,（Reference1）,timeout）
 ＞（Reference0）を空打ちされた	（is_empty,（Reference1））
 ＄（Reference0）	（Reference1）
 ＞（Reference0）を教えてもらった
 
 ＊OnUserInputCancel
+＞（Reference0）をタイムアウト	（compare,（Reference1）,timeout）
 ＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 
 ＃────────
@@ -292,20 +334,6 @@
 ＠balloon_tooltip
 （nop,（split,（Ｒ１）,（バイト値,1）））（call，（Ｓ０）.tooltip）
 
-＃────────
-＃表情復帰
-＃────────
-＊OnSurfaceRestore	（３人目フラグ）＜２
-\p[2]\s[-1]
-\1（choice,\s[2000],\s[2100],\s[2006],\s[2302],\s[2303]）（OFF）
-\0（choice,\s[0],\s[100],\s[6],\s[106],\s[200],\s[300]）（OFF）
-
-＊OnSurfaceRestore	（３人目フラグ）==２
-\p[2]（choice,\s[4000],\s[4005],\s[4100],\s[4105],\s[4200],\s[4302],\s[4304]）
-\1（choice,\s[2000],\s[2100],\s[2006],\s[2302],\s[2303]）（OFF）
-\0（choice,\s[0],\s[100],\s[6],\s[106],\s[200],\s[300]）（OFF）
-
-
 ＃＊OnOverlap
 ＃＞重なり２	（Reference0）==1-2
 ＃＞重なり	（Reference0）==0-1
@@ -323,55 +351,31 @@
 ＃
 ＃期待通りに動かないので封印
 
-＃────────
-＃マウス反応
-＃────────
-＊OnMouseDoubleClick
-＄（Reference3）（Reference4）見つめタイマ	
-＞（Reference3）（Reference4）つつかれ	（Reference5）==0
-
-＊OnMouseWheel
-＄ころころカウンタ=（ころころカウンタ）+1
-＄ころころカウンタ初期化タイマ	３
-＞（Reference3）（Reference4）上ころ	（Reference2）>0&&（ころころカウンタ）>3
-＞（Reference3）（Reference4）下ころ	（Reference2）<0&&（ころころカウンタ）>3
-＞（Reference3）（Reference4）ころころ	（ころころカウンタ）>3
-
-＊ころころカウンタ初期化
-＄ころころカウンタ	０
-
-＊OnMouseHover
-＄（Reference3）（Reference4）見つめタイマ	３
-
-＊OnMouseLeave
-＄（Reference3）（Reference4）見つめタイマ	
-
-＊OnMouseLeaveAll
-＄（Reference3）（Reference4）見つめタイマ	
 
 ＃────────
-＃バグ報告
+＃■バグ報告
 ＃────────
-＊バグ報告
+＊OnWebClap
 \![open,inputbox,拍手送信内容,-1,いいね！,--limit=1000]
+\0\s[301]聞くだけ聞いてやるよ。\w5
+聞くだけな。\w5
+\1\c\s[2005]言うだけならタダ、って言うしな。\w5
+（when,（３人目フラグ）==２,\p[2]\s[4005]どんな些細なことでもかまいません。）
+\e
 
 ＊拍手送信内容を教えてもらった
-\![execute,http-post,http://clap.webclap.com/clap.php?id=etwaslangsam,--param=message_body="芹那と妃音＠（拍手送信内容）",--async=webclap]
+\![execute,http-post,http://clap.webclap.com/clap.php?id=etwaslangsam,--param=message_body="芹那＠（拍手送信内容）",--async=webclap]
 ＄拍手送信内容	
 
 ＊拍手送信内容を空打ちされた
 \e
 
-＊拍手送信完了
+＊OnExecuteHTTPComplete	（Reference1）==webclap
 \0\s[0]送ったぞ。\w6
 \1\s[2005]わざわざサンキューな。
+\e
 
-＊拍手送信失敗
+＊OnExecuteHTTPFailure	（Reference1）==webclap
 \0\s[107]チッ……失敗だってよ。
 \1\s[2102]（Reference4）が原因みてぇーだな。
-
-＊OnExecuteHTTPComplete
-＞拍手送信完了	（R1）==webclap
-
-＊OnExecuteHTTPFailure
-＞拍手送信失敗	（R1）==webclap
+\e
