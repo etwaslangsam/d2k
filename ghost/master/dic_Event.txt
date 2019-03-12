@@ -26,10 +26,75 @@
 ＄（Reference3）（Reference4）見つめタイマ	
 
 ＃────────
+＃時間イベント
+＃────────
+＊OnMinuteChange
+\e
+
+＊OnHourTimeSignal
+＞（現在時）時
+＞時報	（時報反応）==1
+\e
+
+＊時報
+\0\s[0]（現在時）時だ。
+\e
+
+＊時報
+\1\s[2000]（現在時）時になったみてぇだな。
+\e
+
+＊時報	（３人目フラグ）==２
+\p[2]\s[4302]（現在時）時ですよ！
+\e
+
+＊８時	（３人目フラグ）==２
+\p[2]\s[4303]今ごろは、授業が始まってる時間でしょうね・・・。
+今日もお二人を連れて行くことが出来ませんでしたわ。\w5
+\0\s[303]つーかお前もサボりじゃねぇか。
+\e
+
+＊１０時
+\1\s[2302]10時のおやつタイムだー！
+\e
+
+＊１０時	（３人目フラグ）==２
+\p[2]\s[4304]みなさん！
+ティータイムにしましょう！\w3 ティータイム！
+\0\s[302]\1\s[2004]
+\e
+
+＊１２時
+\1\s[2302]お昼ごはんまだー？
+\e
+
+＊１５時	（３人目フラグ）==２
+\p[2]\s[4005]今日のおやつはなんでしょうか？
+\e
+
+＊１６時
+\0\s[100]ガッコが終わる頃だな。
+\1\s[2000]下校時は狸共に待ち伏せされやすい瞬間だな。
+\e
+
+＊２３時	（３人目フラグ）==２
+\p[2]\s[4009]このままでは、殿方の家で一夜を明かすことに・・・！
+\e
+
+＊０時
+\0\s[305]げっ・・・日付が変わってる。
+\e
+
+＃────────
 ＃■表情復帰
 ＃────────
-＊OnSurfaceRestore
-\p[2]（when,（３人目フラグ）==２,\s[4000],\s[-1]）\1\s[2000]（OFF）\0\s[0]（OFF）
+＊OnSurfaceRestore	（３人目フラグ）!=２
+\p[2]\s[-1]\1\s[2000]（OFF）\0\s[0]（OFF）
+\e
+
+＊OnSurfaceRestore	（３人目フラグ）==２
+\p[2]\s[4000]\1\s[2000]（OFF）\0\s[0]（OFF）
+\e
 
 ＃────────
 ＃シェル変更
@@ -294,46 +359,26 @@
 ＞（Reference0）を空打ちされた	（is_empty,（Reference1））
 ＄（Reference0）	（Reference1）
 ＞（Reference0）を教えてもらった
+\e
 
 ＊OnUserInputCancel
-＞（Reference0）をタイムアウト	（compare,（Reference1）,timeout）
-＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
+＞（Reference0）を空打ちされた
+\e
 
 ＃────────
 ＃選択肢
 ＃────────
-＃＊OnChoiceSelect
-＃＄選択ＩＤ	（Reference0）
-＃＞（Reference0）
-＃＞見つからない
-
-＊OnChoiceSelectEx
-＄選択ラベル	（Reference0）
-＄選択ＩＤ	（Reference1）
-＞（Reference1）
-＞見つからない
-
 ＊OnChoiceTimeout
 
-＊OnAnchorSelectEx
-＄選択ラベル	（Reference0）
-＄選択ＩＤ	（Reference1）
-＞（Reference1）
-＞見つからない
-
-＃＊OnAnchorSelect
-＃＄選択ＩＤ	（Reference0）
-＃＞（Reference0）
-＃＞見つからない
-
-＊見つからない
-：\s[302]あぁ？\w3 （Reference0）？
-んなもんねーよ？
-：\s[2104]こりゃ作ったヤツに詫び入れさせねーとな。\e
+＊OnAnchorSelect
+＞（Reference0）
 
 ＠balloon_tooltip
 （nop,（split,（Ｒ１）,（バイト値,1）））（call，（Ｓ０）.tooltip）
 
+＃────────
+＃■重なり反応
+＃────────
 ＊OnOverlap
 ＄SAORI引数の計算	無効
 ＞玄妃	（equal,（Reference0）,1-2）
