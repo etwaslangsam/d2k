@@ -349,13 +349,14 @@
 ＃■キー入力
 ＃────────
 ＊OnUserInput
-＞（Reference0）を空打ちされた	（is_empty,（Reference1））
+＞（Reference0）をタイムアウト	（compare（バイト値,１）（Reference1）（バイト値,１）timeout）
+＞（Reference0）を空打ちされた	（is_empty（バイト値,１）（Reference1））
 ＄（Reference0）	（Reference1）
 ＞（Reference0）を教えてもらった
 \e
 
 ＊OnUserInputCancel
-＞（Reference0）を空打ちされた
+＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 \e
 
 ＃────────
