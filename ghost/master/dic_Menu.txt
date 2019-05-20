@@ -21,7 +21,8 @@
  \![*]\q[時報の設定,TimeSignalSetting]
 
 ■その他
- \![*]\q[バグ報告など,OnWebClap]
+ \![*]\q[イベントアーカイブ,EventArchive]
+ \![*]\q[ご意見φ・ご要望,OnWebClap]
  （when、（３人目フラグ）==１、\_l[,@4]\![*]\q[玄恵を呼ぶ,三人目表示]）
 
  \q[なんでもないです,cancel]
