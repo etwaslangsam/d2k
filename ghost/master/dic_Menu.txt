@@ -78,6 +78,7 @@
 ＃■トーク
 ＃────────
 ＊forcedtalk
+＞（現在月）月	（乱数０～５）==３
 ＄トーク	（）
 （トーク）
 
@@ -205,17 +206,60 @@ https://raw.githubusercontent.com/etwaslangsam/d2k/master/
 ＃────────
 ＃ポータル
 ＃────────
-＠portalrootbutton.caption
+＊sakura.portalsites
 配布サイト
 
 ＊sakura.portalsites
 ほっとぺっぱぁ団
-http://ghosthacking.webcrow.jp/index.html
+https://hotpepar.blogspot.com/
 
 
 ＊sakura.portalsites
 メッセージフォーム
 https://goo.gl/forms/qJhnaKjUfVtcOWSk1
+
+
+＊sakura.portalsites
+-
+
+＊sakura.portalsites
+独立伺か研究施設 ばぐとら研究所
+http://ssp.shillest.net/
+
+
+＊sakura.portalsites
+Disc-2
+http://disc2.s56.xrea.com/
+
+
+＊sakura.portalsites
+伺か情報ブログ「ghost-log」
+https://ghost-log.net/
+
+
+＊sakura.portalsites
+ゴーストキャプターさくら
+http://buynowforsale.shillest.net/ghosts/
+
+
+＊sakura.portalsites
+ゴースト回覧板3rd
+http://jbbs.shitaraba.net/computer/44300/
+
+\0\s[8]今どき掲示板たぁ珍しいな。
+\1\s[2005]xyzって書こーぜ！
+
+＊sakura.portalsites
+伺的な感想やレビューのWiki
+https://ghost-info.net/dokuwiki/doku.php
+
+
+＊sakura.portalsites
+噂と評判[改] 過去ログ保管庫+
+https://ghostreview.sakura.ne.jp/
+
+\1\s[2005]アタシらのいい噂、流してくれよ。
+\0\s[7]変な噂流すんじゃねーぞ。
 
 ＃────────
 ＃芹那おすすめ
