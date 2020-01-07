@@ -86,8 +86,7 @@
 ＃入力イベント
 ＃────────
 ＊OnCommunicate
-≫「　（Reference1）	（Reference0）==user
-≫（Reference1）	（Reference0）==user
+≫ユーザ「　（Reference1）	（Reference0）==user
 ＞COMMUNICATE該当なし
 
 ＊COMMUNICATE該当なし
