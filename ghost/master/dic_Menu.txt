@@ -38,6 +38,8 @@
 ■表示 ※ゴースト終了まで有効\n[half]
  \![*]\q[常に手前に表示,常に手前に表示]
  \![*]\q[喋り終わると奥に沈む,奥に沈む]\n
+■バグ報告
+ \![*]\q[連絡する,OnWebClap]\n
 \q[なんでもないです,cancel]
 \_q\e
 
@@ -159,7 +161,7 @@
 \1\s[2000]オフにしたぞ。\e
 
 ＃────────
-＃ユーザ名
+＃
 ＃────────
 ＊常に手前に表示
 \![set,windowstate,stayontop]
@@ -170,6 +172,29 @@
 \![set,windowstate,!stayontop]
 \0\s[0]変更したぞ。\x
 ＞設定
+
+＃────────
+＃
+＃────────
+＊OnWebClap
+\![open,inputbox,拍手送信内容,,--limit=1000]
+\p[2]\s[4005]送信するメッセージを入力してください。\e
+
+＊拍手送信内容を教えてもらった
+\![execute,http-post,http://clap.webclap.com/clap.php?id=teniwa,--param=message_body="芹那＠（拍手送信内容）",--async=webclap]
+＄拍手送信内容	
+
+＊拍手送信内容がからっぽ
+\0\s[302]なんも書いてねーじゃねーか。\e
+＊OnExecuteHTTPComplete
+＞拍手送信完了	（Reference1）==webclap
+
+＊拍手送信完了
+\1\s[2005]たしかに送ったぜ。あんがとよ。\e
+＊OnExecuteHTTPFailure
+＞拍手送信失敗	（Reference1）==webclap
+＊拍手送信失敗
+\p[2]\s[4104]「（Reference4）」という理由で送信に失敗しました。
 
 ＃────────
 ＃
