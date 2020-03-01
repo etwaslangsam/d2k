@@ -273,12 +273,7 @@
 ＃ファイルドロップ
 ＃────────
 ＊OnDirectoryDrop
-（whenlist,（Reference1）==
-,0,（set、案内、芹那）
-,1,（set、案内、妃音）
-,2,（set,案内、玄恵）
-,（set、案内、芹那）
-）
+（whenlist,（Reference1）==,0,（set、案内、芹那）,1,（set、案内、妃音）,2,（set,案内、玄恵）,（set、案内、芹那））
 
 ＊OnUpdatedataCreating
 ＞（案内）が更新準備開始
@@ -570,19 +565,23 @@
 ＃────────
 ＃さとりすと
 ＃────────
-＊OnSatolistBoot
+＊OnSatolistBoot	（Status）!=talking
 \0\s[106]\p[2]\s[4005]開発ですか？\w3 頑張ってくださいね。
 \1\s[2302]おー、頑張れよ。\e
 
-＊OnSatolistClosed
+＃────────
+＊OnSatolistClosed	（Status）!=talking
 \0\s[100]\p[2]\s[4304]お疲れ様です、家主様。
 \1\s[2005]おつかれーい。\e
 
-＊OnSatolistSaved
+＃────────
+＊OnSatolistSaved	（Status）!=talking
 \p[2]\s[4304]保存はこまめにしましょうね。\e
-＊OnSatolistSaved
+＃────────
+＊OnSatolistSaved	（Status）!=talking
 \p[2]\s[4005]一段落つきましたか？\w5\n\s[4105]お疲れ様です。\e
-＊OnSatolistSaved
+＃────────
+＊OnSatolistSaved	（Status）!=talking
 \p[2]\s[4005]家主様がんばれ（はーと）\w3 がんばれ（はーと）\w5
 \s[4302]さあ、お二人もご一緒に！
 \0\s[305]やらねぇよ。\n
