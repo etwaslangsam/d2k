@@ -210,13 +210,7 @@
 ＃■表情復帰
 ＃────────
 ＊OnSurfaceRestore
-\p[2]\s[4000]\1\s[2000]（OFF）\0\s[0]（OFF）\e
-＊OnSurfaceRestore
-\p[2]\s[-1]\1\s[2000]（OFF）\0\s[0]（OFF）\e
-＊OnSurfaceRestore
-\p[2]\s[4000]\1\s[-1]（OFF）\0\s[0]（OFF）\e
-＊OnSurfaceRestore
-\p[2]\s[-1]\1\s[-1]（OFF）\0\s[0]（OFF）\e
+\1（OFF）\0（OFF）
 
 ＃────────
 ＃■マウスイベント
