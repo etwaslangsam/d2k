@@ -238,8 +238,15 @@
 ＊OnMouseLeaveAll
 ＄（Reference3）（Reference4）見つめタイマ	
 
-＊OnMouseEnterAll	（Status）!=talking
-（whenlist,（Reference3）==,0,\0\s[302],1,\1\s[2005],2,\p[2]\s[4200]）
+＊OnMouseEnterAll
+＞（Reference3）にフォーカス	（Status）!=talking
+
+＊0にフォーカス
+\1\s[2000]\p[2]\s[4200]\0\s[302]
+＊1にフォーカス
+\0\s[0]\p[2]\s[4200]\1\s[2005]
+＊2にフォーカス
+\0\s[0]\1\s[2000]\p[2]\s[4005]
 
 ＃────────
 ＃インストール
