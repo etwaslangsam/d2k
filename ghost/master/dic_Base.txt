@@ -492,11 +492,6 @@ https://www.amazon.co.jp/dp/B00DMUL3FG/ref=cm_sw_r_tw_dp_U_x_7svHBbTVM6WM3
 ＠季節
 （whenlist,（現在月）<,3,冬,6,春,7,梅雨,9,夏,12,秋,冬）
 
-＠ON
-\![bind,bukkomi,！？,1]
-＠OFF
-\![bind,bukkomi,！？,0]
-
 ＠中華まん
 肉まん
 あんまん
