@@ -1,22 +1,3 @@
-＊OnCacheRestore
-＞OnSatoriLoad
-＊OnSatoriLoad
-＄文「＊」の重複回避	有効、起動中
-＄単語群「＊」の重複回避	直前、トーク中
-＄会話時サーフェス戻し	無効
-＄スコープ切り換え時	
-＄話しかけ	芹那
-＄SAORI引数の計算	自動
-＄手動セーブ	実行
-
-＊OnCacheSuspend
-＞OnSatoriUnload
-＊OnSatoriUnload
-＄全タイマ解除	実行
-＄トーク	
-＄次のトーク	
-＄次から1回目のトーク	
-
 ＃────────
 ＃初回起動
 ＃────────

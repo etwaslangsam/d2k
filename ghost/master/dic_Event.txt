@@ -1,3 +1,21 @@
+＊OnCacheRestore
+＞OnSatoriLoad
+＊OnSatoriLoad
+＄文「＊」の重複回避	有効、起動中
+＄単語群「＊」の重複回避	直前、トーク中
+＄会話時サーフェス戻し	無効
+＄スコープ切り換え時	
+＄話しかけ	芹那
+＄SAORI引数の計算	自動
+＄手動セーブ	実行
+
+＊OnCacheSuspend
+＞OnSatoriUnload
+＊OnSatoriUnload
+＄全タイマ解除	実行
+＄トーク	
+＄トーク予約のキャンセル	＊
+
 ＃────────
 ＃シェル変更
 ＃────────
@@ -117,10 +135,12 @@
 ＃────────
 ＃時間イベント
 ＃────────
-＊OnHourTimeSignal
-＞時報B	（時報反応）&&（Sender）==SSP
-＞時報A	（時報反応）
-＞（現在時）時
+＊OnMinuteChange
+＞時報	（時報反応）&&（現在分）==０
+
+＊時報
+＞時報B	（Sender）==SSP
+＞時報A
 
 ＃────────
 ＊時報A
@@ -210,6 +230,7 @@
 ＃■表情復帰
 ＃────────
 ＊OnSurfaceRestore
+（when,（Reference0）＞700,\0\s[0]\1\s[2000]\p[2]\s[4000]）（when,（Reference1）＞2500,\0\s[0]\1\s[2000]\p[2]\s[4000]）
 \1（OFF）\0（OFF）
 
 ＃────────
@@ -237,16 +258,6 @@
 
 ＊OnMouseLeaveAll
 ＄（Reference3）（Reference4）見つめタイマ	
-
-＊OnMouseEnterAll
-＞（Reference3）にフォーカス	（Status）!=talking
-
-＊0にフォーカス
-\1\s[2000]\p[2]\s[4200]\0\s[302]
-＊1にフォーカス
-\0\s[0]\p[2]\s[4200]\1\s[2005]
-＊2にフォーカス
-\0\s[0]\1\s[2000]\p[2]\s[4005]
 
 ＃────────
 ＃インストール
