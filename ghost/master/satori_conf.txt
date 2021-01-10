@@ -20,6 +20,7 @@
 ＄妃音友好度	０
 ＄玄恵イベント	０
 ＄玄恵友好度	０
+＄さとりすと	１
 ＠SAORI
 calc,saori/ssu.dll,calc
 calc_float,saori/ssu.dll,calc_float

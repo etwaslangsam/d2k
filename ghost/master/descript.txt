@@ -5,9 +5,9 @@ craftman,etwaslangsam
 craftmanw,‚Ä‚É‚Ä‚É
 craftmanurl,http://ghosthacking.webcrow.jp/index.html
 readme,readme.txt
-sakura.name,‹Ú“ß
+sakura.name,µí ‹Ú“ß
 sakura.name2,‚¹‚è‚È
-kero.name,”Ü‰¹
+kero.name,ŒÜŒ— ”Ü‰¹
 sakura.seriko.defaultsurface,0
 kero.seriko.defaultsurface,2000
 balloon.defaultsurface,0
