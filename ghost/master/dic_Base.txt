@@ -397,15 +397,12 @@ https://raw.githubusercontent.com/etwaslangsam/d2k/master/
 ＃ポータル
 ＃────────
 ＊sakura.portalsites
-配布サイト
-
-＊sakura.portalsites
-ほっとぺっぱぁ団
+配布元
 https://hotpepar.blogspot.com/
 
 
 ＊sakura.portalsites
-連絡先
+バグ報告
 https://goo.gl/forms/qJhnaKjUfVtcOWSk1
 
 

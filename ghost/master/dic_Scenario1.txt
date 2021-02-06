@@ -3,7 +3,7 @@
 ”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
 –EventArchive1
 \1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
-y\q[‹¤’Ê,EventArchive]z y\q[‹Ú“ß,EventArchive1]z y\q[”Ü‰¹,EventArchive2]z y\q[ŒºŒb,EventArchive3]z
+\q[‹¤’Ê,EventArchive] ^ \q[‹Ú“ß,EventArchive1] ^ \q[”Ü‰¹,EventArchive2] ^ \q[ŒºŒb,EventArchive3]
 
 ¡‹Ú“ß\_l[,@3]
  \![*]\q[—FDƒCƒxƒ“ƒg,‹Ú“ß—FDƒCƒxƒ“ƒg]
