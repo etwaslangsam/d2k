@@ -1,0 +1,155 @@
+＊OnCacheSuspend
+＞OnSatoriUnload
+＊OnSatoriUnload
+＄話	
+＄話しかけ	
+＄次から1回目のトーク	
+＄次から2回目のトーク	
+＄次から3回目のトーク	
+＄辞書フォルダ	.,Common
+
+＊制限モード解除
+\![leave,inductionmode]
+
+＃────────
+＃シェル変更
+＃────────
+＊OnShellChanging
+＞（Reference0）に着替える
+＞その他のシェルに着替える
+
+＊OnShellChanged
+＄現在シェル	（Reference0）
+＞（Reference0）に着替えた
+＞その他のシェルに着替えた
+
+＃────────
+＃最小化
+＃────────
+＊OnWindowStateMinimize
+＄手動セーブ	実行
+
+＊OnWindowStateRestore
+＄手動セーブ	実行
+＞最小化解除
+
+＃────────
+＃サスペンド
+＃────────
+＊OnSysSuspend
+＄手動セーブ	実行
+
+＊OnSysResume
+＞スリープ解除
+
+＃────────
+＃入力イベント
+＃────────
+＊OnCommunicate
+≫ユーザ「　（Reference1）	（Reference0）==user
+＞COMMUNICATE該当なし
+
+＃────────
+＃
+＃────────
+＊OnUserInput
+＞（Reference0）を空打ちされた	（is_empty（バイト値,１）（Reference1））
+＄（Reference0）	（Reference1）
+＞（Reference0）を教えてもらった
+
+＊OnUserInputCancel
+＞（Reference0）をタイムアウト	（compare（バイト値,１）（Reference1）（バイト値,１）timeout）
+＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
+
+＃────────
+＃時間イベント
+＃────────
+＊OnMinuteChange
+＞時報	（時報反応）&&（現在分）==０
+
+＊時報
+＞時報B	（Sender）==SSP
+＞時報A
+
+＃────────
+＃選択肢
+＃────────
+＊OnChoiceTimeout
+＞選択肢タイムアウト
+
+＊OnAnchorSelect
+＞（Reference0）
+
+＠balloon_tooltip
+（nop,（split,（Ｒ１）,（バイト値,1）））（call，（Ｓ０）.tooltip）
+
+＃────────
+＃■表情復帰
+＃────────
+＊OnSurfaceRestore
+\p[2]\s[（デフォルトサーフェス2）]φ
+\1\s[（デフォルトサーフェス1）]（OFF）φ
+\0\s[（デフォルトサーフェス0）]（OFF）\e
+
+＃────────
+＃■マウスイベント
+＃────────
+＊OnMouseClick
+＄（Reference3）（Reference4）見つめタイマ	
+＞（Reference3）（Reference4）つつかれ	（Reference5）==0&&（is_empty,（Reference4））==0
+
+＊OnMouseDoubleClick
+＄（Reference3）（Reference4）見つめタイマ	
+＞（Reference3）つつかれ	（Reference5）==0&&（is_empty,（Reference4））
+
+＊OnMouseWheel
+＄ころころカウンタ=（ころころカウンタ）+1
+＄ころころカウンタ初期化タイマ	３
+＞（Reference3）（Reference4）上ころ	（Reference2）>0&&（ころころカウンタ）>3
+＞（Reference3）（Reference4）下ころ	（Reference2）<0&&（ころころカウンタ）>3
+＞（Reference3）（Reference4）ころころ	（ころころカウンタ）>3
+
+＊ころころカウンタ初期化
+＄ころころカウンタ	０
+
+＊OnMouseHover
+＄（Reference3）（Reference4）見つめタイマ	２
+
+＊OnMouseLeave
+＄（Reference3）（Reference4）見つめタイマ	
+
+＊OnMouseLeaveAll
+＄（Reference3）（Reference4）見つめタイマ	
+
+
+＃────────
+＃■キー押下
+＃────────
+＊OnKeyPress
+＞（Reference0）が押された
+
+＊tが押された
+（）
+
+＊mが押された
+＞Menu
+
+＃────────
+＃トーク
+＃────────
+＊OnTalk
+＞（Reference1）	（Reference0）
+＞（現在月）月トーク	（乱数１～４）==２
+（）
+
+＃────────
+＃
+＃────────
+＊OnExecuteHTTPComplete
+＞拍手送信完了		（compare,（Reference1）,webclap）
+
+＊OnExecuteHTTPFailure
+＞拍手送信失敗		（compare,（Reference1）,webclap）
+
+＊拍手送信失敗
+\0φ（（Reference4）φ）\e

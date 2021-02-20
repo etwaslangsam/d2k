@@ -21,6 +21,7 @@
 ＄玄恵イベント	０
 ＄玄恵友好度	０
 ＄さとりすと	１
+＄対象	芹那
 ＠SAORI
 calc,saori/ssu.dll,calc
 calc_float,saori/ssu.dll,calc_float

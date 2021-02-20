@@ -6,22 +6,21 @@
 ＞Menu
 
 ＊Menu
-\0\b[2]\c\_q
+\1\_q■web拍手\n[half]
+ \![*]\q[熱い想いを送る,OnWebClap]\n[half]
+ \![*]\q[芹那がすき,簡易拍手1] \![*]\q[妃音がすき,簡易拍手2] \![*]\q[玄恵がすき,簡易拍手3]
+\0\b[2]\c
 \![*]\q[t)何か話してください,forcedtalk]
 \![*]\q[e)イベントアーカイブ,EventArchive]\n
 ■コミュニケーション\n[half]
- \![*]\q[c)話しかける,読者投稿]
- \![*]\q[f)教えてください,教えてください]
- \![*]\q[お納めください,捧げ物を選ぶ]\n
+ \![*]\q[c)話しかける,話しかける]
+ \![*]\q[f)教えてください,教えてください]\n
 ■トークの設定\n[half]
  \![*]\q[自由に,LevelX] ／ \q[静かに,Level4]\n
 ■設定\n[half]
  \![*]\q[名前の変更,NameEntry]
  \![*]\q[その他の設定,設定]\n
  \q[なんでもないです,cancel]
-\1■web拍手\n[half]
- \![*]\q[熱い想いを送る,OnWebClap]\n[half]
- \![*]\q[芹那がすき,簡易拍手1] \![*]\q[妃音がすき,簡易拍手2] \![*]\q[玄恵がすき,簡易拍手3]
 \_q\e
 
 ＊設定
@@ -257,91 +256,100 @@
 ＞教えてください
 
 ＃────────
-＃
+＃芹那おすすめ
 ＃────────
-＊捧げ物を選ぶ
-\0\b[2]\_q
-■芹那
-\![*]\q[いろはす,いろはす]
-\![*]\q[カップヌードル チリトマト,チリトマト]
-\![*]\q[チョコあーんぱん,チョコあーんぱん]
+＊sakura.recommendsites
+いφ・ろφ・はφ・す 天然水
+https://www.amazon.co.jp/dp/B0026IAWMU/ref=cm_sw_r_tw_dp_U_x_2AuHBbSZX4TD6
 
-■妃音
-\![*]\q[ライフガード,ライフガード]
-\![*]\q[どん兵衛天ぷらそば,どん兵衛]
-\![*]\q[オーザックあっさり塩,オーザック]
+＊sakura.recommendsites
+カップヌードル チリトマトヌードル
+https://www.amazon.co.jp/dp/B0019X4AVW/ref=cm_sw_r_tw_dp_U_x_HGuHBbKWQJW5N
 
-■玄恵
-\![*]\q[紅茶花伝ミルクティー,ミルクティー]
-\![*]\q[佐野らーめん,佐野らーめん]
-\![*]\q[ダースφ＜ミルクφ＞,ダース]\n
-\q[もどる,Menu] \q[とじる,script:\e]
-\_q\e
+＊sakura.recommendsites
+ブルボン チョコあーんぱん
+https://www.amazon.co.jp/dp/B01COSCPX0/ref=cm_sw_r_tw_dp_U_x_JMuHBb5HX05KX
 
-＊いろはす
-\0\s[8]おっ、オレのお気にじゃねぇか。\w5
-献上品か？\w3 悪ぃな。
-\1\s[2004]炭酸じゃねぇのかよ～。
-\p[2]\s[4005]ありがとうございます、家主様。\e
+＃────────
+＃妃音おすすめ
+＃────────
+＊kero.recommendsites
+エリートヤンキー三郎
+https://www.amazon.co.jp/dp/B00B1N4XF8/ref=cm_sw_r_tw_dp_U_x_pGtHBbBJCW35S
 
-＊チリトマト
-\0\s[300]なんだよ。
-オレの好みよく分かってるじゃねーか。\n[half]
-\p[2]\s[4105]さすが家主様。\n芹那さんの好みを熟知してるんですね。
-\1\s[2303]アタシの前でイチャついてんじゃねーよ。\w5
-\0\s[304]イチャついてるワケじゃねーッスよ！\e
+＊kero.recommendsites
+銀牙 ― 流れ星
+https://www.amazon.co.jp/dp/B016ZWZI7G/ref=cm_sw_r_tw_dp_U_x_aSsHBb9N3AM34
 
-＊チョコあーんぱん
-\0\s[5]\1\s[2005]たまに食うと美味いよな。\n[half]
-\p[2]\s[4005]そうですね。\w5
-\1\s[2008]‥‥芹那？\n[half]
-\0\s[5]もぐもぐ‥‥φ（ｺﾞｸﾝ\w5\n[half]
-\s[2]えっ！？\w3 な、なんスか？\w5\e
+＊kero.recommendsites
+銀牙伝説ウィード
+https://www.amazon.co.jp/dp/B009SJR4XK/ref=cm_sw_r_tw_dp_U_x_vTsHBbPFHGB53 
 
-＊ライフガード
-\1\s[2005]うむ、くるしゅうない。\n[half]
-\0\s[305]げっ‥‥炭酸かぁ‥‥。\w5
-\1\s[2302]炭酸飲んだら、次はしょっぱいものが怖い。
-\p[2]\s[4303]そんな「まんじゅう怖い」じゃないんですから。\e
+＊kero.recommendsites
+銀牙伝説WEEDオリオン
+https://www.amazon.co.jp/dp/B00QIC9O7Y/ref=cm_sw_r_tw_dp_U_x_0UsHBb71SN9DK 
 
-＊どん兵衛
-\1\s[2005]やっぱカップ麺といやぁコレだよな。
-\0\s[100]オレぁ油揚げが入ってるほうが好きッスけどね。
-\p[2]\s[4302]ワタクシはどちらでも美味しくいただけますわ。\e
+＊kero.recommendsites
+銀牙～THE LAST WARS～
+https://www.amazon.co.jp/dp/4537133333/ref=cm_sw_r_tw_dp_U_x_RVsHBbG37JBGH 
 
-＊オーザック
-\1\s[2005]いやぁ～ちょうど食いたかったんだわ。
-サンキューな。
-\0\s[305]なぜカルビーでも、湖池屋でもなくハウス食品‥‥。
-\1\s[2102]\cえっ？
-ポテチといやぁオーザックだろ？\w5 家は昔からこれだぞ？
-\p[2]\s[4105]その家だけの習慣ってありますよね。\e
+＊kero.recommendsites
+カメレオン
+https://www.amazon.co.jp/dp/B009KYCNO8/ref=cm_sw_r_tw_dp_U_x_O.sHBb6JB5K0Z
 
-＊ミルクティー
-\p[2]\s[4005]まぁ、ありがとうございます。
-\1\s[2302]ミルクティーといやぁ、幕の内弁当食いたくなるよな。
-\0\s[306]どんな組み合わせッスか？！\e
+＊kero.recommendsites
+ジゴロ次五郎
+https://www.amazon.co.jp/dp/B00LC9YMT8/ref=cm_sw_r_tw_dp_U_x_UbtHBbGYGVHBX
 
-＊佐野らーめん
-\p[2]\s[4302]まあ！
-ワタクシの大好物ですわ！
-\1\s[2005]美味いよな。
-\s[2302]量がちっと物足りねぇけど。
-\0\s[8]あ～、そッスね。
-おにぎりも一緒に食いたい所ッスよね。\e
+＊kero.recommendsites
+くろアゲハ
+https://www.amazon.co.jp/dp/B00ORO6770/ref=cm_sw_r_tw_dp_U_x_QatHBb19R14QF 
 
-＊ダース
-\p[2]\s[4005]ありがとうございます。
-みんなで食べましょう。\n[half]
-\1\s[2005]あ～ん。\_w[1000]
-\p[2]\s[4302]\cはい、どうぞ。\_w[1000]
-\1\s[2006]\cんっ‥‥もぐもぐ‥‥。
-\s[2302]たまにゃ甘いのも悪くないな。\_w[1000]
-\p[2]\s[4309]\c次は芹那さんですね。
-はい、あ～ん‥‥。
-\0\s[304]やめろこっ恥ずかしい！
-自分で食えるわ！\_w[1000]
-\1\s[2303]\cノリわるいぞ～。\_w[1000]
-\p[2]\s[4303]\cもう‥‥。\_w[1000]
-\s[4105]では家主様もお一つどうぞ、あ～ん‥‥。\e
+＊kero.recommendsites
+ジョジョの奇妙な冒険 第4部
+https://www.amazon.co.jp/dp/B009LHC4KC/ref=cm_sw_r_tw_dp_U_x_xEtHBbXY8F4J6 
 
+＊kero.recommendsites
+BOY
+https://www.amazon.co.jp/dp/B009LHBR5U/ref=cm_sw_r_tw_dp_U_x_rdtHBbGB4PBX9
+
+＊kero.recommendsites
+-
+
+＊kero.recommendsites
+チェリオ ライフガード
+https://www.amazon.co.jp/dp/B008HOA90C/ref=cm_sw_r_tw_dp_U_x_IWtHBbPG8B7D2 
+
+＊kero.recommendsites
+どん兵衛 天ぷらそば
+https://www.amazon.co.jp/dp/B003OQV9DE/ref=cm_sw_r_tw_dp_U_x_MZtHBb8EYQCDX
+
+＊kero.recommendsites
+オーザックあっさり塩
+https://www.amazon.co.jp/dp/B003J35VOU/ref=cm_sw_r_tw_dp_U_x_SbuHBbR3GZ1BA 
+
+＃────────
+＃玄恵おすすめ
+＃────────
+＊char2.recommendsites
+紅茶花伝 ロイヤルミルクティー
+https://www.amazon.co.jp/dp/B007ULGGI2/ref=cm_sw_r_tw_dp_U_x_wavHBbRTZKZ94
+
+＊char2.recommendsites
+凄麺佐野らーめん
+https://www.amazon.co.jp/dp/B004E4IPA0/ref=cm_sw_r_tw_dp_U_x_UgvHBbBWH5F7S
+
+＊char2.recommendsites
+ダースφ<ミルクφ>
+https://www.amazon.co.jp/dp/B015FIOZDO/ref=cm_sw_r_tw_dp_U_x_elvHBbPKYZMWA
+
+＊char2.recommendsites
+-
+
+＊char2.recommendsites
+性食鬼
+https://www.amazon.co.jp/dp/B00FGY4W22/ref=cm_sw_r_tw_dp_U_x_frvHBb5W4HSN7
+
+＊char2.recommendsites
+ユリア100式
+https://www.amazon.co.jp/dp/B00DMUL3FG/ref=cm_sw_r_tw_dp_U_x_7svHBbTVM6WM3
