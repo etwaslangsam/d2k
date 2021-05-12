@@ -6,14 +6,14 @@
 ＄次から1回目のトーク	
 ＄次から2回目のトーク	
 ＄次から3回目のトーク	
-＄辞書フォルダ	.,Common
+＄手動セーブ間隔	
+＄トーク予約のキャンセル	
+＄手動セーブ間隔	
 
 ＊制限モード解除
 \![leave,inductionmode]
 
-＃────────
-＃シェル変更
-＃────────
+＃────────シェル変更
 ＊OnShellChanging
 ＞（Reference0）に着替える
 ＞その他のシェルに着替える
@@ -23,34 +23,36 @@
 ＞（Reference0）に着替えた
 ＞その他のシェルに着替えた
 
-＃────────
-＃最小化
-＃────────
+＃────────バルーン切り替え
+＊OnBalloonChange
+（BalloonChangeTalk）
+
+＃────────最小化
 ＊OnWindowStateMinimize
 ＄手動セーブ	実行
 
 ＊OnWindowStateRestore
-＄手動セーブ	実行
-＞最小化解除
+（set,手動セーブ,実行）\![raise,最小化解除]
 
-＃────────
-＃サスペンド
-＃────────
+＃────────本体更新
+＊OnBasewareUpdating
+（BasewareUpdatingTalk）
+
+＊OnBasewareUpdated
+（BasewareUpdatedTalk）
+
+＃────────サスペンド
 ＊OnSysSuspend
 ＄手動セーブ	実行
 
 ＊OnSysResume
-＞スリープ解除
+\![raise,スリープ解除]
 
-＃────────
-＃入力イベント
-＃────────
+＃────────入力イベント
 ＊OnCommunicate
 ≫ユーザ「　（Reference1）	（Reference0）==user
-＞COMMUNICATE該当なし
+（COMMUNICATE該当なし）
 
-＃────────
-＃
 ＃────────
 ＊OnUserInput
 ＞（Reference0）を空打ちされた	（is_empty（バイト値,１）（Reference1））
@@ -61,21 +63,14 @@
 ＞（Reference0）をタイムアウト	（compare（バイト値,１）（Reference1）（バイト値,１）timeout）
 ＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 
-＃────────
-＃時間イベント
-＃────────
-＊OnMinuteChange
-＞時報	（時報反応）&&（現在分）==０
+＃────────時間イベント
+＊OnMinuteChange	（現在分）==０
+（when，（時報反応）==1，（時報トーク））
+＞（現在時）時
 
-＊時報
-＞時報B	（Sender）==SSP
-＞時報A
-
-＃────────
-＃選択肢
-＃────────
+＃────────選択肢
 ＊OnChoiceTimeout
-＞選択肢タイムアウト
+（ChoiceTimeoutTalk）
 
 ＊OnAnchorSelect
 ＞（Reference0）
@@ -83,24 +78,19 @@
 ＠balloon_tooltip
 （nop,（split,（Ｒ１）,（バイト値,1）））（call，（Ｓ０）.tooltip）
 
-＃────────
-＃■表情復帰
-＃────────
+＃────────■表情復帰
 ＊OnSurfaceRestore
-\p[2]\s[（デフォルトサーフェス2）]φ
-\1\s[（デフォルトサーフェス1）]（OFF）φ
-\0\s[（デフォルトサーフェス0）]（OFF）\e
+\p[2]\s[（デフォルトサーフェス2）]\1\s[（デフォルトサーフェス1）]（OFF）\0\s[（デフォルトサーフェス0）]（OFF）\e
 
-＃────────
-＃■マウスイベント
-＃────────
-＊OnMouseClick
+＃────────■マウスイベント
+＊OnMouseClick	（Reference5）==0
 ＄（Reference3）（Reference4）見つめタイマ	
-＞（Reference3）（Reference4）つつかれ	（Reference5）==0&&（is_empty,（Reference4））==0
+＞（Reference3）（Reference4）つつかれ	（is_empty,（Reference4））==0
+＞forcedtalk	（is_empty,（Reference4））==1
 
-＊OnMouseDoubleClick
+＊OnMouseDoubleClick	（Reference5）==0
 ＄（Reference3）（Reference4）見つめタイマ	
-＞（Reference3）つつかれ	（Reference5）==0&&（is_empty,（Reference4））
+＞（Reference3）つつかれ	（is_empty,（Reference4））==1
 
 ＊OnMouseWheel
 ＄ころころカウンタ=（ころころカウンタ）+1
@@ -121,10 +111,7 @@
 ＊OnMouseLeaveAll
 ＄（Reference3）（Reference4）見つめタイマ	
 
-
-＃────────
-＃■キー押下
-＃────────
+＃────────■キー押下
 ＊OnKeyPress
 ＞（Reference0）が押された
 
@@ -134,22 +121,16 @@
 ＊mが押された
 ＞Menu
 
-＃────────
-＃トーク
-＃────────
+＃────────トーク
 ＊OnTalk
 ＞（Reference1）	（Reference0）
 ＞（現在月）月トーク	（乱数１～４）==２
 （）
 
 ＃────────
-＃
-＃────────
-＊OnExecuteHTTPComplete
-＞拍手送信完了		（compare,（Reference1）,webclap）
+＊OnExecuteHTTPComplete	（Reference1）==webclap
+＞拍手送信完了
 
-＊OnExecuteHTTPFailure
-＞拍手送信失敗		（compare,（Reference1）,webclap）
-
-＊拍手送信失敗
+＊OnExecuteHTTPFailure	（Reference1）==webclap
+＄拍手送信内容	
 \0φ（（Reference4）φ）\e
