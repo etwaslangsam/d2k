@@ -1,19 +1,21 @@
-＃────────
-＃リソース
-＃────────
+＃────────リソース
 ＠homeurl
 https://raw.githubusercontent.com/etwaslangsam/d2k/master/
 
-＃────────
-＃ポータル
-＃────────
+＃────────ポータル
 ＊sakura.portalsites
 配布元
+
+＊sakura.portalsites
+ほっとぺっぱぁ団
 https://hotpepar.blogspot.com/
 
 
 ＊sakura.portalsites
 バグ報告
+
+＊sakura.portalsites
+メッセージフォーム
 https://goo.gl/forms/qJhnaKjUfVtcOWSk1
 
 
@@ -55,9 +57,7 @@ https://ghost-info.net/dokuwiki/doku.php
 https://ghostreview.sakura.ne.jp/
 
 
-＃────────
-＃単語群
-＃────────
+＃────────単語群
 ＠時間帯
 （whenlist,（現在時）<,4,深夜,11,朝,16,昼,19,夕方,23,夜,深夜）
 ＠曜日

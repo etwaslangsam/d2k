@@ -13,6 +13,15 @@
 ＊制限モード解除
 \![leave,inductionmode]
 
+＊ResetFlag
+＄全タイマ解除	実行
+＄その１	
+＄その２	
+＄その３	
+＄選択ＩＤ	
+＄選択ラベル	
+＄選択番号	
+
 ＃────────シェル変更
 ＊OnShellChanging
 ＞（Reference0）に着替える
@@ -64,8 +73,8 @@
 ＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 
 ＃────────時間イベント
-＊OnMinuteChange	（現在分）==０
-（when，（時報反応）==1，（時報トーク））
+＊OnHourTimeSignal	（時報反応）==1
+（when，（現在分）＜５，（時報トーク））
 ＞（現在時）時
 
 ＃────────選択肢
@@ -124,7 +133,6 @@
 ＃────────トーク
 ＊OnTalk
 ＞（Reference1）	（Reference0）
-＞（現在月）月トーク	（乱数１～４）==２
 （）
 
 ＃────────
