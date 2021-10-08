@@ -73,9 +73,8 @@
 ＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 
 ＃────────時間イベント
-＊OnHourTimeSignal	（時報反応）==1
-（when，（現在分）＜５，（時報トーク））
-＞（現在時）時
+＊OnHourTimeSignal
+＞時報トーク	（時報反応）==1&&（現在分）＜６
 
 ＃────────選択肢
 ＊OnChoiceTimeout
@@ -92,14 +91,9 @@
 \p[2]\s[（デフォルトサーフェス2）]\1\s[（デフォルトサーフェス1）]（OFF）\0\s[（デフォルトサーフェス0）]（OFF）\e
 
 ＃────────■マウスイベント
-＊OnMouseClick	（Reference5）==0
+＊OnMouseDoubleClick
 ＄（Reference3）（Reference4）見つめタイマ	
-＞（Reference3）（Reference4）つつかれ	（is_empty,（Reference4））==0
-＞forcedtalk	（is_empty,（Reference4））==1
-
-＊OnMouseDoubleClick	（Reference5）==0
-＄（Reference3）（Reference4）見つめタイマ	
-＞（Reference3）つつかれ	（is_empty,（Reference4））==1
+＞（Reference3）（Reference4）つつかれ	（Reference5）==0
 
 ＊OnMouseWheel
 ＄ころころカウンタ=（ころころカウンタ）+1
