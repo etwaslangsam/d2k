@@ -5,3 +5,4 @@ ghost/master/satori_savedata.txt,nonar,noupdate
 ghost/master/profile/,nonar,noupdate
 shell/master/profile/,nonar,noupdate
 updates2.dau.bak,nonar,noupdate
+shell/bunny/,nonar,noupdate
