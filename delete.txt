@@ -1,5 +1,0 @@
-ghost\master\dic_Word.txt
-ghost\master\dic_Touch2.txt
-ghost\master\dic_String.txt
-ghost\master\dic_Menu.txt
-ghost\master\dic_Event.txt

@@ -41,14 +41,8 @@
 ＄手動セーブ	実行
 
 ＊OnWindowStateRestore
-（set,手動セーブ,実行）\![raise,最小化解除]
-
-＃────────本体更新
-＊OnBasewareUpdating
-（BasewareUpdatingTalk）
-
-＊OnBasewareUpdated
-（BasewareUpdatedTalk）
+＄手動セーブ	実行
+＞最小化解除
 
 ＃────────サスペンド
 ＊OnSysSuspend
@@ -127,6 +121,7 @@
 ＃────────トーク
 ＊OnTalk
 ＞（Reference1）	（Reference0）
+（when、（喋り間隔）==３０秒、\0（OFF）\1（OFF））
 （）
 
 ＃────────
