@@ -2,6 +2,7 @@
 ＃シナリオ・芹那
 ＃────────
 ＊EventArchive1
+\![enter,passivemode]
 \1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
 \q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]
 
@@ -14,7 +15,7 @@
  \![*]\q[クリスマス,芹那クリスマス]
  \![*]\q[新年の挨拶,芹那お正月]
  \![*]\q[芹那ハロウィン,芹那ハロウィン]\n
-\q[もどる,Menu] \q[とじる,script:\e]
+\q[もどる,Menu] \q[とじる,シナリオモード閉じる]
 \_q\e
 
 ＃────────ホワイトデー

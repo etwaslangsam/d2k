@@ -1,4 +1,5 @@
 ＊EventArchive
+\![enter,passivemode]
 \1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
 \q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]
 
@@ -14,8 +15,11 @@
  \![*]\q[うたた寝をしていたらφ…,うたた寝]
  \![*]\q[豆まき鬼巻き恵方巻,豆まき鬼巻き恵方巻]
  \![*]\q[全員好感度MAX！雪見誰選ぶ？,雪見だいふくハーレムルート]\n
-\q[もどる,Menu] \q[とじる,script:\e]
+\q[もどる,Menu] \q[とじる,シナリオモード閉じる]
 \_q\e
+
+＊シナリオモード閉じる
+\![leave,passivemode]\e
 
 ＃────────
 ＃共通イベント

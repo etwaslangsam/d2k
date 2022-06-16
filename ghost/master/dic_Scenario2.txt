@@ -2,7 +2,8 @@
 ＃シナリオ・妃音
 ＃────────
 ＊EventArchive2
-\1\s[2000]\![leave,passivemode]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
+\![enter,passivemode]
+\1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
 \q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]
 
 ■妃音\_l[,@3]
@@ -14,7 +15,7 @@
  \![*]\q[クリスマス,妃音クリスマス]
  \![*]\q[新年の挨拶,妃音お正月]
  \![*]\q[妃音ハロウィン,妃音ハロウィン]\n
-\q[もどる,Menu] \q[とじる,script:\e]
+\q[もどる,Menu] \q[とじる,シナリオモード閉じる]
 \_q\e
 
 ＃────────ホワイトデー
