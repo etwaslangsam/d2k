@@ -6,3 +6,4 @@ ghost/master/profile/,nonar,noupdate
 shell/master/profile/,nonar,noupdate
 updates2.dau.bak,nonar,noupdate
 shell/bunny/,nonar,noupdate
+shell/bunny_suke/,nonar,noupdate
