@@ -13,7 +13,7 @@ kero.balloon.offsetx,-10
 kero.balloon.offsety,20
 
 menu.background.bitmap.filename,bg.png
-menu.foreground.bitmap.filename,bg.png
+menu.foreground.bitmap.filename,fg.png
 
 menu.background.font.color.r,255
 menu.background.font.color.g,255
