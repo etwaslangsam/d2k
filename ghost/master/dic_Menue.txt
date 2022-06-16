@@ -3,23 +3,22 @@
 \0\s[0]iOFFj‚ ‚ñ‚¾‚æH\w9\![raise,Menu]
 
 –Menu
-\1\_q¡web”Žè\n[half]
- \![*]\q[”M‚¢‘z‚¢‚ð‘—‚é,OnWebClap]\n[half]
- \![*]\q[‹Ú“ß‚ª‚·‚«,ŠÈˆÕ”Žè1] \![*]\q[”Ü‰¹‚ª‚·‚«,ŠÈˆÕ”Žè2] \![*]\q[ŒºŒb‚ª‚·‚«,ŠÈˆÕ”Žè3]
-\0\b[2]\c
+\0\b[2]\_q\c
 ¡ƒRƒ~ƒ…ƒjƒP[ƒVƒ‡ƒ“\n[half]
  \![*]\q[t)‰½‚©˜b‚µ‚Ä‚­‚¾‚³‚¢,forcedtalk]
  \![*]\q[c)˜b‚µ‚©‚¯‚é,Ž¿–â]
  \![*]\q[f)‹³‚¦‚Ä‚­‚¾‚³‚¢,‹³‚¦‚Ä‚­‚¾‚³‚¢]
  \![*]\q[e)ƒCƒxƒ“ƒgƒA[ƒJƒCƒu,EventArchive]\n
-¡ƒg[ƒN‚ÌÝ’è\n[half]
- \![*]\q[‚R‚O•b,‚R‚O•b‚²‚Æ]^\q[‚U‚O•b,‚U‚O•b‚²‚Æ]^\q[‚X‚O•b,‚X‚O•b‚²‚Æ]
- \![*]\q[‚P‚Q‚O•b,‚P‚Q‚O•b‚²‚Æ]^\q[‚P‚T‚O•b,‚P‚T‚O•b‚²‚Æ]^\q[‚P‚W‚O•b,‚P‚W‚O•b‚²‚Æ]\n[half]
- \![*]\q[•b”Žw’è,•b”Žw’è] ^ \q[‚²Ž©—R‚É,LevelX] ^ \q[’‚ç‚È‚¢,–Ù‚Á‚Ä‚Ä]\n
 ¡Ý’è\n[half]
+ \![*]\q[’‚é•p“x,TalkInterval]
  \![*]\q[–¼‘O‚Ì•ÏX,NameEntry]
  \![*]\q[‚»‚Ì‘¼‚ÌÝ’è,Ý’è]\n
-\q[‚È‚ñ‚Å‚à‚È‚¢‚Å‚·,cancel]
+¡web”Žè\n[half]
+ \![*]\q[ƒRƒƒ“ƒg‚ð“ü—Í‚µ‚Ä‘—‚é,OnWebClap]
+ \![*]\q[‹Ú“ß‚ª‚·‚« ‚ð‘—‚é,ŠÈˆÕ”Žè1]
+ \![*]\q[”Ü‰¹‚ª‚·‚« ‚ð‘—‚é,ŠÈˆÕ”Žè2]
+ \![*]\q[ŒºŒb‚ª‚·‚« ‚ð‘—‚é,ŠÈˆÕ”Žè3]
+\n\q[‚È‚ñ‚Å‚à‚È‚¢‚Å‚·,cancel]
 \_q\e
 
 –Ý’è
@@ -30,7 +29,7 @@
  \![*]\q[í‚ÉŽè‘O‚É,í‚ÉŽè‘O‚É•\Ž¦] ^ \q[‰œ‚É’¾‚Þ,‰œ‚É’¾‚Þ]\n
 ¡‚³‚Æ‚è‚·‚Æ˜AŒg@[iwhenAi‚³‚Æ‚è‚·‚Æj==1AONAOFFj]\n[half]
  \![*]\q[˜AŒg‚·‚é,‚³‚Æ‚è‚·‚Æ˜AŒg‚P] ^ \q[‚µ‚È‚¢,‚³‚Æ‚è‚·‚Æ˜AŒg‚O]\n
-\q[‚à‚Ç‚é,Menu] \q[‚Æ‚¶‚é,script:\e]
+\q[©,Menu] \q[~,script:\e]
 \_q\e
 
 –cancel
@@ -49,6 +48,14 @@
 ij
 
 ”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ¡’‚è•p“x
+–TalkInterval
+\0\_q\c\![*]\q[‚R‚O•b,‚R‚O•b‚²‚Æ]@\![*]\q[‚P‚Q‚O•b,‚P‚Q‚O•b‚²‚Æ]
+\![*]\q[‚U‚O•b,‚U‚O•b‚²‚Æ]@\![*]\q[‚P‚T‚O•b,‚P‚T‚O•b‚²‚Æ]
+\![*]\q[‚X‚O•b,‚X‚O•b‚²‚Æ]@\![*]\q[‚P‚W‚O•b,‚P‚W‚O•b‚²‚Æ]\n[half]
+\![*]\q[•b”Žw’è,•b”Žw’è]@\![*]\q[‚²Ž©—R‚É,LevelX]@\![*]\q[’‚ç‚È‚¢,–Ù‚Á‚Ä‚Ä]
+\n\q[©,Menu] \q[~,script:\e]
+\_q\e
+
 –‚R‚O•b‚²‚Æ
 ’‚èŠÔŠu	‚R‚O•b
 ‰ï˜bŽžƒT[ƒtƒFƒX–ß‚µ	‹­§
