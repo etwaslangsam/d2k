@@ -157,8 +157,7 @@
 \![*]\q[ŽO”ö‚É‚Â‚¢‚Ä,FAQ5]
 \![*]\q[ŒºŒb‚É‚Â‚¢‚Ä,FAQ6]
 \![*]\q[‚±‚Ì’¬‚É‚Â‚¢‚Ä,FAQ8]
-
-\q[‚à‚Ç‚é,Menu] \q[‚Æ‚¶‚é,script:\e]
+\n\q[©,Menu] \q[~,script:\e]
 \_q\e
 
 –FAQ1
