@@ -1,6 +1,7 @@
 ＃────────■メニュー
 ＊0つつかれ
-\0\s[0]（OFF）あんだよ？\w9\![raise,Menu]
+\0\s[0]（OFF）あんだよ？\w9
+＞Menu
 
 ＊Menu
 \0\b[2]\_q\c
@@ -8,7 +9,7 @@
  \![*]\q[t)何か話してください,forcedtalk]
  \![*]\q[c)話しかける,質問]
  \![*]\q[f)教えてください,教えてください]
- \![*]\q[e)イベントアーカイブ,EventArchive]\n
+ \![*]\q[e)シナリオアーカイブ,EventArchive]\n
 ■設定\n[half]
  \![*]\q[喋る頻度,TalkInterval]
  \![*]\q[名前の変更,NameEntry]
