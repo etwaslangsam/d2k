@@ -20,6 +20,8 @@
  \![*]\q[”Ü‰¹‚ª‚·‚« ‚ð‘—‚é,ŠÈˆÕ”Žè2]
  \![*]\q[ŒºŒb‚ª‚·‚« ‚ð‘—‚é,ŠÈˆÕ”Žè3]
 \n\q[‚È‚ñ‚Å‚à‚È‚¢‚Å‚·,cancel]
+\p[2]
+\![*]\q[l•¨Ð‰î‚ðŒ©‚é,l•¨Ð‰î]
 \_q\e
 
 –Ý’è
@@ -50,11 +52,12 @@
 
 ”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ¡’‚è•p“x
 –TalkInterval
-\0\_q\c\![*]\q[‚R‚O•b,‚R‚O•b‚²‚Æ]@\![*]\q[‚P‚Q‚O•b,‚P‚Q‚O•b‚²‚Æ]
+\0\_q\c\q[©,Menu] \q[~,script:\e]\n
+\![*]\q[‚R‚O•b,‚R‚O•b‚²‚Æ]@\![*]\q[‚P‚Q‚O•b,‚P‚Q‚O•b‚²‚Æ]
 \![*]\q[‚U‚O•b,‚U‚O•b‚²‚Æ]@\![*]\q[‚P‚T‚O•b,‚P‚T‚O•b‚²‚Æ]
 \![*]\q[‚X‚O•b,‚X‚O•b‚²‚Æ]@\![*]\q[‚P‚W‚O•b,‚P‚W‚O•b‚²‚Æ]\n[half]
-\![*]\q[•b”Žw’è,•b”Žw’è]@\![*]\q[‚²Ž©—R‚É,LevelX]@\![*]\q[’‚ç‚È‚¢,–Ù‚Á‚Ä‚Ä]
-\n\q[©,Menu] \q[~,script:\e]
+\![*]\q[•b”Žw’è,•b”Žw’è]@\![*]\q[‚²Ž©—R‚É,LevelX]@\![*]\q[’‚ç‚È‚¢,–Ù‚Á‚Ä‚Ä]\n
+Œ»ÝƒÓFi’‚èŠÔŠuj
 \_q\e
 
 –‚R‚O•b‚²‚Æ
