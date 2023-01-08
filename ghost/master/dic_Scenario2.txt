@@ -3,9 +3,8 @@
 ＃────────
 ＊EventArchive2
 \![enter,passivemode]
-\1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
-\q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]
-
+\1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q\q[←,シナリオモード戻る] \q[×,シナリオモード閉じる]\n[half]
+\q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]\n
 ■妃音\_l[,@3]
  \![*]\q[友好イベント,妃音友好イベント]
  \![*]\q[友好イベント2,妃音友好イベント2]
@@ -16,7 +15,6 @@
  \![*]\q[新年の挨拶,妃音お正月]
  \![*]\q[妃音ハロウィン,妃音ハロウィン]
  \![*]\q[妃音のブラが透けるだけの話,AY_ki_a_1] \f[color,red]New!\f[default]
-\n\q[←,シナリオモード戻る] \q[×,シナリオモード閉じる]
 \_q\e
 
 ＃────────雨宿り

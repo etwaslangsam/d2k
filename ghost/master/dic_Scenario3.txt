@@ -3,9 +3,8 @@
 ＃────────
 ＊EventArchive3
 \![enter,passivemode]
-\1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q
-\q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]
-
+\1\s[2000]\p[2]\s[4000]\0\s[0]\b[2]\c\_q\q[←,シナリオモード戻る] \q[×,シナリオモード閉じる]\n[half]
+\q[共通,EventArchive] ／ \q[芹那,EventArchive1] ／ \q[妃音,EventArchive2] ／ \q[玄恵,EventArchive3]\n
 ■玄恵\_l[,@3]
  \![*]\q[友好イベント,玄恵友好イベント]
  \![*]\q[友好イベント2,玄恵友好イベント2]
@@ -15,8 +14,7 @@
  \![*]\q[ホワイトデー,WD_k_a_1] \f[color,red]New！\f[default]
  \![*]\q[クリスマス,玄恵クリスマス]
  \![*]\q[新年の挨拶,玄恵お正月]
- \![*]\q[玄恵ハロウィン,玄恵ハロウィン]\n
-\q[←,シナリオモード戻る] \q[×,シナリオモード閉じる]
+ \![*]\q[玄恵ハロウィン,玄恵ハロウィン]
 \_q\e
 
 ＃────────ホワイトデー
