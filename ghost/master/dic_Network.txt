@@ -60,7 +60,7 @@
 
 ＃────────
 ＊OnWebClap
-\![open,inputbox,拍手送信内容,,--limit=800]（拍手台詞）
+\![open,inputbox,拍手送信内容,,--text=いいね,--limit=800]（拍手台詞）
 
 ＠WCM_URL
 https://script.google.com/macros/s/AKfycbxHT6cacuEsMdGulS0c_a29X1pjDu5CUC3BPqAd9_wwskSn9l1oAAaN216XusA9siAX/exec
@@ -82,15 +82,6 @@ https://script.google.com/macros/s/AKfycbxHT6cacuEsMdGulS0c_a29X1pjDu5CUC3BPqAd9
 ＊SendClap
 ＄メモ	手動
 \![execute,http-post,（WCM_URL）,--param=message_body="（送信元）;（拍手送信内容）;（メモ）",--async=webclap,--timeout=5]
-＊簡易拍手1
-＄メモ	定型
-\![execute,http-post,（WCM_URL）,--param=message_body="（送信元）;芹那＠好き;（メモ）",--async=webclap,--timeout=5]
-＊簡易拍手2
-＄メモ	定型
-\![execute,http-post,（WCM_URL）,--param=message_body="（送信元）;妃音＠好き;（メモ）",--async=webclap,--timeout=5]
-＊簡易拍手3
-＄メモ	定型
-\![execute,http-post,（WCM_URL）,--param=message_body="（送信元）;玄恵＠好き;（メモ）",--async=webclap,--timeout=5]
 
 ＊拍手送信内容を空打ちされた
 ＄拍手送信内容	
