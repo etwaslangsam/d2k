@@ -45,6 +45,9 @@
 ＊forcedtalk
 （）
 
+＊TalkTotalQuantity
+\0（countNoNameTalk）個\e
+
 ＃────────■喋り頻度
 ＊TalkInterval
 \0\_q\c\q[←,Menu] \q[×,script:\e]\n
