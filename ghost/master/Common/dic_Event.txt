@@ -10,6 +10,7 @@
 ＄トーク予約のキャンセル	
 ＄手動セーブ間隔	
 
+
 ＊制限モード解除
 \![leave,inductionmode]
 
@@ -121,7 +122,6 @@
 ＃────────トーク
 ＊OnTalk
 ＞（Reference1）	（Reference0）
-（when、（喋り間隔）==３０秒、\0（OFF）\1（OFF））
 （）
 
 ＃────────
