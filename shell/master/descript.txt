@@ -23,12 +23,3 @@ menu.foreground.font.color.g,255
 menu.foreground.font.color.b,255
 
 seriko.use_self_alpha,1
-
-sakura.menu,hidden
-kero.menu,hidden
-
-sakura.bindgroup1.name,bukkomi,！？
-sakura.bindgroup1.default,0
-
-kero.bindgroup2.name,bukkomi,！？
-kero.bindgroup2.default,0

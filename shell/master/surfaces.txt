@@ -13,17 +13,18 @@ surface0-9, 100-109, 200-201, 206, 300-309, 500
 {
 	element0,base,surface00000.png,0,0
 	
-	animation1.interval,bind
-	animation1.pattern0,add,600,0,0,0
-	animation1.collision0,200,14,261,76,！？
-	}
+	animation100.interval,never
+	animation100.pattern0,overlay,600,0,0,0
+	animation100.pattern1,overlay,-1,5000,0,0
+	
+	animation100.collision0,200,14,261,76,！？
+
+}
 
 //surface1000-1009, 1100-1109, 1200-1201, 1206, 1300-1309, 1500
 //{
 //	element0,base,surface01000.png,0,0
 //
-//	animation1.interval,bind
-//	animation1.pattern0,add,600,0,0,0
 //}
 
 //-------------------------------------------------------------
@@ -255,17 +256,8 @@ surface.append500,1500
 element1,overlayfast,surface00500.png,0,0
 }
 
-//！？
-surface600
-{
-element0,overlay,bukkomi2.png,0,0
-collision0,200,14,261,76,！？
-}
-
 sakura.cursor
 {
 	mousehover0,Eye,eye.cur
 	mousehover1,Bust,eye.cur
 }
-
-

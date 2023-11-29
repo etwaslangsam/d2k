@@ -13,9 +13,11 @@ surface2000-2009, 2100-2109, 2201, 2207-2208, 2300-2311, 2500
 {
 	element0,base,surface_b00000.png,0,0
 	
-	animation2.interval,bind
-	animation2.pattern0,add,700,0,0,0
-	animation2.collision0,236,38,292,100,！？
+	animation100.interval,never
+	animation100.pattern0,overlay,700,0,0,0
+	animation100.pattern1,overlay,-1,5000,0,0
+
+	animation100.collision0,236,38,292,100,！？
 }
 
 //surface3000-3009, 3100-3109, 3201, 3207-3208, 3300-3311, 3500
@@ -263,17 +265,8 @@ surface.append2500, 3500
 element1,overlayfast,surface_b00500.png,0,0
 }
 
-//！？
-surface700
-{
-element0,overlay,bukkomi1.png,0,0
-collision0,236,38,292,100,！？
-}
-
 kero.cursor
 {
 	mousehover0,Eye,eye.cur
 	mousehover1,Bust,eye.cur
 }
-
-

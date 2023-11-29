@@ -1,3 +1,2 @@
 （はーと）	\f[name,メイリオ]\_u[0x2661]\f[default]
-（OFF）	\![bind,bukkomi,！？,0]
-（ON）	\![bind,bukkomi,！？,1]
+（ON）	\i[100]
