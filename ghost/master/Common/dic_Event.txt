@@ -71,6 +71,10 @@
 ＊OnHourTimeSignal
 ＞時報トーク	（時報反応）==1&&（現在分）＜６
 
+＊OnMinuteChange
+＞放置プレイ３０	（Reference4）==1800
+＞放置プレイ６０	（Reference4）==3600
+
 ＃────────選択肢
 ＊OnChoiceTimeout
 （ChoiceTimeoutTalk）
