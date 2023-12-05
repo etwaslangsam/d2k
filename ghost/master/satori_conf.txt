@@ -24,6 +24,7 @@
 ＄ユーザ名_芹	ユーザ
 ＄ユーザ名_妃	ユーザ
 ＄ユーザ名_玄	ユーザ
+＄タイマ変数はセーブしない	有効
 ＠SAORI
 calc,saori/ssu.dll,calc
 calc_float,saori/ssu.dll,calc_float

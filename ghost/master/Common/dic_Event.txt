@@ -19,9 +19,6 @@
 ＄その１	
 ＄その２	
 ＄その３	
-＄選択ＩＤ	
-＄選択ラベル	
-＄選択番号	
 
 ＃────────シェル変更
 ＊OnShellChanging
@@ -112,6 +109,14 @@
 
 ＊OnMouseLeaveAll
 ＄（Reference3）（Reference4）見つめタイマ	
+
+＃────────重なり反応
+＊OnOverlap
+＄SAORI引数の計算	無効
+＞重なり玄妃	（nop,（split，（Reference0），（バイト値、１），0，1））（equal,（S０）,1-2）
+＞重なり芹妃	（nop,（split，（Reference0），（バイト値、１），0，1））（equal,（S０）,0-1）
+＄SAORI引数の計算	自動
+＄重なり中	
 
 ＃────────■キー押下
 ＊OnKeyPress
