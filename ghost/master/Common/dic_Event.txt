@@ -14,12 +14,6 @@
 ＊制限モード解除
 \![leave,inductionmode]
 
-＊ResetFlag
-＄全タイマ解除	実行
-＄その１	
-＄その２	
-＄その３	
-
 ＃────────シェル変更
 ＊OnShellChanging
 ＞（Reference0）に着替える
@@ -101,7 +95,7 @@
 ＊ころころカウンタ初期化
 ＄ころころカウンタ	０
 
-＊OnMouseHover
+＊OnMouseHover	（出会い頭タイマ）==０
 ＄（Reference3）（Reference4）見つめタイマ	２
 
 ＊OnMouseLeave
