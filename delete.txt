@@ -3,3 +3,4 @@ shell\master\bukkomi2.png
 ghost\master\dic_Start.txt
 ghost\master\dic_End.txt
 ghost\master\dic_Change.txt
+ghost\master\var\clap.php_id=etwaslangsam
