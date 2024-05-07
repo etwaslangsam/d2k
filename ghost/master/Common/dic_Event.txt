@@ -79,10 +79,10 @@
 ＃────────■表情復帰
 ＊OnSurfaceRestore
 ＞OnSurfaceRestore_pre	（３人目フラグ）!=２
-\p[2]\s[4000]\1\s[2000]\![set,scaling,100,100]\0\s[0]\e
+\p[2]\s[（デフォルトサーフェス2）]\1\s[（デフォルトサーフェス1）]\![set,scaling,100,100]\0\s[（デフォルトサーフェス0）]\e
 
 ＊OnSurfaceRestore_pre
-\p[2]\s[-1]\1\s[2000]\![set,scaling,100,100]\0\s[0]\e
+\p[2]\s[-1]\1\s[（デフォルトサーフェス1）]\![set,scaling,100,100]\0\s[（デフォルトサーフェス0）]\e
 
 ＃────────■マウスイベント
 ＊OnMouseDoubleClick
